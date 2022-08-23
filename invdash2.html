@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html>
+  
 <head>
-<style>
-var {
-iframe = document.querySelector('#iframe'); 
-iframe.setAttribute('src', 'https://datastudio.google.com/embed/reporting/1559c94c-73da-4b96-8105-1f82f268ea30/page/7aq0C');
-}
+<style type="text/css">
 .parent {
   position: relative;
   height: 200px; 
@@ -21,19 +18,25 @@ iframe.setAttribute('src', 'https://datastudio.google.com/embed/reporting/1559c9
   width: 100%
 }
 
-
 iframe { 
   height: 200px;
   width: 700px;
+  resize: both;
 }
 </style>
+  
+<script type="text/javascript">
+var iframe = document.querySelector('#iframe'); 
+iframe.setAttribute('src', 'https://datastudio.google.com/embed/reporting/1559c94c-73da-4b96-8105-1f82f268ea30/page/7aq0C');
+</script>
+  
 </head>
-<html> 
-  <body> 
-    <div class="parent">
-      <iframe id="iframe" src=""></iframe>
-      <div class="overlay"></div>
-    </div>
-      <script src="main.js"></script> 
-    </body> 
+  
+<body> 
+  <div class="parent">
+    <iframe id="iframe" src=""></iframe>
+    <div class="overlay"></div>
+  </div>
+    <script src="main.js"></script> 
+</body> 
 </html> 
